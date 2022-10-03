@@ -35,15 +35,9 @@ consecutive_func(hundred_digit_str)
 
 
 def splitoddoeven(tlist):
-    list_even = []
-    list_odd = []
 
-    for i in tlist:
-        if i % 2 == 0:
-            list_even.append(i)
-        else:
-            list_odd.append(i)
-
+    list_even = [i for i in tlist if i % 2 == 0]
+    list_odd = [i for i in tlist if i % 2 != 0]
     return print("The list have these even numbers:", list_even, "and these odd:", list_odd)
 
 
