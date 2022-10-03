@@ -198,8 +198,8 @@ def test_diploma_student(students):
         print(s.get_id(), s.courses_enrolled())
     for course_name, course in diploma.list_courses().items():
         course.grade_assignments('ANPE100002', grades_test_fail)
-        course.grade_assignments('DACA100003', grades_test_pass_distinction)
-        course.grade_assignments('ALCA100001', grades_test_pass)
+        course.grade_assignments('ANGO100003', grades_test_pass_distinction)
+        course.grade_assignments('ROPE100001', grades_test_pass)
     diploma.diploma_scores()
 
 def test_course_class(course_students):
@@ -207,37 +207,37 @@ def test_course_class(course_students):
     for student in course_students:
         python_programming.add_student(student)
     python_programming.grade_assignments('ANPE100002', grades_test_fail)
-    python_programming.grade_assignments('DACA100003', grades_test_pass_distinction)
-    python_programming.grade_assignments('ALCA100001', grades_test_pass)
+    python_programming.grade_assignments('ANGO100003', grades_test_pass_distinction)
+    python_programming.grade_assignments('ROPE100001', grades_test_pass)
 
     data_mining = Course(course_name="Data Mining and Machine Learning")
     for student in course_students:
         data_mining.add_student(student)
     data_mining.grade_assignments('ANPE100002', grades_test_fail)
-    data_mining.grade_assignments('DACA100003', grades_test_pass_distinction)
-    data_mining.grade_assignments('ALCA100001', grades_test_pass)
+    data_mining.grade_assignments('ANGO100003', grades_test_pass_distinction)
+    data_mining.grade_assignments('ROPE100001', grades_test_pass)
 
     visual_analytics = Course(course_name="Visual Analytics")
     for student in course_students:
         visual_analytics.add_student(student)
     visual_analytics.grade_assignments('ANPE100002', grades_test_fail)
-    visual_analytics.grade_assignments('DACA100003', grades_test_pass_distinction)
-    visual_analytics.grade_assignments('ALCA100001', grades_test_pass)
+    visual_analytics.grade_assignments('ANGO100003', grades_test_pass_distinction)
+    visual_analytics.grade_assignments('ROPE100001', grades_test_pass)
 
     text_analytics = Course(course_name="Text Analytics")
     for student in course_students:
         text_analytics.add_student(student)
     text_analytics.grade_assignments('ANPE100002', grades_test_fail)
-    text_analytics.grade_assignments('DACA100003', grades_test_pass_distinction)
-    text_analytics.grade_assignments('ALCA100001', grades_test_pass)
+    text_analytics.grade_assignments('ANGO100003', grades_test_pass_distinction)
+    text_analytics.grade_assignments('ROPE100001', grades_test_pass)
     #course_students[0].student_info()
 
 
 if __name__ == '__main__':
     student_info = [
-        {"name": "Alessandro", "surname": "Catania", "dob": "100795"},
+        {"name": "Rocio", "surname": "Pereyra", "dob": "100795"},
         {"name": "Andrea", "surname": "Perez", "dob": "071290"},
-        {"name": "Davide", "surname": "Catania", "dob": "250886"},
+        {"name": "Andres", "surname": "Gonzalez", "dob": "250886"},
     ]
 
     students = []
