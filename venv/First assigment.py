@@ -22,10 +22,9 @@ def consecutive_func(inputstring):
         if result > max_result:
             max_result = result
 
-    return print(max_result)
+    return print(f'The max_result is: {max_result}')
 
 # Using the function in the list
-
 
 consecutive_func(hundred_digit_str)
 
